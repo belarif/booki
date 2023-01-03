@@ -1,10 +1,132 @@
-body {
-    max-width: 1400px;
-    padding: 30px 30px 0 30px;
+html {
+    width: 1400px;
+    margin: 0;
+    padding: 0;
 }
 
-nav, .nav-links {
+body {
+    padding: 30px 30px 0 30px;
+    margin: 0;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
+}
+
+.nav-links {
+    display: inherit;
+}
+
+.logo {
+    width: 80px;
+    height: 30px;
+}
+
+ul li {
+    display: block;
+    
+}
+
+ul li a, .afficher-plus {
+    text-decoration: none;
+}
+
+/* contenu principal main */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: 40px 0;
+}
+
+section ul {
+    padding: 0;
+}
+
+section ul li {
+    display: flex;
+}
+
+.hebergements, .plus-populaires {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.grid-hebergements {
+    grid-column: 1 / 2;
+}
+
+figure {
+    background-color: #FFF;
+    margin: 0;
+    border-radius: 20px;
+    padding: 6px 6px 6px 6px;
+}
+
+.hebergement-image {
+    border-radius: 20px 20px 0 0;
+    width: 250px;
+    height: 130px;
+}
+
+figcaption {
+    color: #000;
+    /* line-height: 6px; */
+    padding: 0 10px 4px 10px;
+    position:relative;
+}
+
+figcaption figure {
+    padding: 0;
+}
+
+figcaption figure i {
+    color: #0065FC;
+}
+
+.cartes-hebergement {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.grid-plus-populaires {
+    grid-column: 2 / 3;
+}
+
+.entete-plus-populaire {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-chart-line {
+    color: #0065FC;
+}
+
+.plus-populaire-image {
+    border-radius: 20px 0 0 20px;
+    width: 130px;
+    height: 140px;
+}
+
+.figure-plus-populaire {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.etoiles-plus-populaire {
+    position: absolute;
+    bottom: 6px;
+}
+
+p, h1, h2, h3, h4 {
+    line-height: 0.9em;
+}
+
+p, h2, h3 {
+    margin: 0.5em 0;
 }
 
