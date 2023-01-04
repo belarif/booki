@@ -1,11 +1,27 @@
 
+:root {
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --grey: #F2F2F2;
+    --dark: #000;
+    --white: #FFF;
+}
+
 body {
     margin: auto;
     padding-top: 30px;
     width: 1400px;
 }
 
+main {
+    margin: 40px 0 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
 nav {
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -13,6 +29,41 @@ nav {
 nav img {
     width: 80px;
     height: 30px;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    white-space: pre;
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+form {
+    margin: 20px 0 30px 0;
+    border-radius: 30px;
+}
+
+.search button {
+    padding: 10px 20px;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.search form > i {
+    padding: 15px 20px;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--grey);
+}
+
+input[type="search"] {
+    padding: 10px 20px;
 }
 
 ul {
@@ -27,38 +78,14 @@ a {
     text-decoration: none;
 }
 
-/* contenu principal main */
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    margin: 40px 0 60px 0;
-}
-
-.card-hosting {
-    background-color: #FFF;
-    margin: 0;
-    border-radius: 20px;
-    padding: 6px 6px 6px 6px;
-}
-
-.stars {
-    margin: 0;
-}
-
-.card-popular figcaption {
-    position: relative;
-    padding: 0 10px 4px 10px;
-}
-
 p, 
 h1, 
 h2, 
 h3, 
 li, 
 a {
-    color: #000;
     line-height: 0.9em;
+    color: var(--dark);
 }
 
 p, 
@@ -67,11 +94,63 @@ h3 {
     margin: 0.5em 0;
 }
 
+footer {
+    padding: 40px 80px 50px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--grey);
+}
+
+footer ul li {
+    line-height: 1.9em;
+}
+
+figcaption > figure {
+    margin: 0;
+}
+
+figcaption > figure i {
+    color: var(--blue);
+}
+
+.filters ul {
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.filters ul li {
+    margin-right: 60px;
+    line-height: 2.4em;
+}
+
+button[type="button"] {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+button[type="button"] i {
+    color: var(--blue);
+}
+
+.card-hosting {
+    margin: 0;
+    border-radius: 20px;
+    padding: 6px 6px 6px 6px;
+    background-color: var(--white);
+}
+
+.card-popular figcaption {
+    position: relative;
+    padding: 0 10px 4px 10px;
+}
+
 .hosting, 
 .popular {
-    background-color: #F2F2F2;
-    border-radius: 20px;
     padding: 40px;
+    border-radius: 20px;
+    background-color: var(--grey);
 }
 
 .grid-hosting {
@@ -85,10 +164,10 @@ h3 {
 }
 
 .hosting ul {
+    margin: 25px 0 50px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    margin: 25px 0 50px 0;
 }
 
 .stars-popular {
@@ -96,9 +175,9 @@ h3 {
     bottom: 6px;
 }
 
-.stars i, 
+
 .fa-chart-line {
-    color: #0065FC;
+    color: var(--blue);
 }
 
 .grid-popular {
@@ -117,17 +196,16 @@ h3 {
 }
 
 .card-popular {
-    display: flex;
     margin: 0 0 30px 0;
-    background-color: #FFF;
-    border-radius: 20px;
     padding: 6px 6px 6px 6px;
+    border-radius: 20px;
+    display: flex;
+    background-color: var(--white);
 }
 
 /* activites */
 .activity {
     margin-bottom: 60px;
-    /* width: 100%; */
 }
 
 .grid-activity {
@@ -135,38 +213,27 @@ h3 {
 }
 
 .activity ul {
+    margin: 25px 0 80px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
-    margin: 25px 0 80px 0;
 }
 
-.card-activity {
+.activity figure {
     margin: 0;
     border-radius: 0 0 20px 20px;
     box-shadow: 0px 20px 10px rgb(242, 242, 242, 0.8)
 }
 
 .activity img {
+    border-radius: 20px 20px 0 0;
     width: 100%;
     height: 390px;
-    border-radius: 20px 20px 0 0;
 }
 
-.card-activity figcaption {
+.activity figcaption {
     padding: 20px 20px 20px 15px ;
     font-size: 1.2em;
     font-weight: 600;
-    color: #000;
-}
-
-footer {
-    padding: 40px 80px 50px 80px;
-    background-color: #F2F2F2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-footer ul li {
-    line-height: 1.9em;
+    color: var(--dark);
 }
