@@ -21,6 +21,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     margin: 40px 0 60px 0;
+    width: 100%;
 }
 
 nav {
@@ -74,9 +75,9 @@ nav a:hover {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 40px 80px 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px 30px 60px;
     background-color: var(--grey);
 }
 
@@ -129,6 +130,7 @@ button:hover {
 
 button i {
     color: var(--blue);
+    margin-right: 8px;
 }
 
 .hosting, 
@@ -233,7 +235,7 @@ button i {
     color: var(--dark);
 }
 
-.search i {
+.fa-location-dot {
     float: left;
     border-radius: 15px 0 0 15px;
     padding: 12px 20px;
@@ -243,11 +245,104 @@ button i {
 
 .filters ul {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     margin: 20px 0 20px 0;
+    gap: 60px;
 }
 
-.filters ul li {
-    margin-right: 60px;
-    line-height: 2.4em;
+/******** tablet *********/
+@media only screen and (max-width: 768px ) {
+
+    body {
+        margin: auto;
+        padding-top: 20px;
+        width: 90%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+     }
+
+    form {
+        width: 50%;    
+    }
+
+    input[type="search"] {
+        padding: 10px;
+    }
+
+    input[type="button"] {
+        padding: 10px 0px;
+        width: 33%;
+    }
+
+    button:hover {
+        background-color: var(--light-blue);
+    }
+
+    button i {
+        margin-right: 6px;
+    }
+
+    .fa-location-dot {
+        width: 5%;
+    }
+
+    .filters ul {
+        gap: 20px;
+    }
+
+    .hosting, 
+    .popular {
+        padding: 30px;
+    }
+
+    .hosting ul {
+        margin: 25px 0 25px 0;
+        gap: 10px;
+    }
+
+    .card-hosting {
+        padding: 6px 6px 10px 6px;
+        height: 220px;
+    }
+
+    .card-popular {
+        margin: 0 0 15px 0;
+    }
+
+    .popular img, 
+    .popular ul li,
+    .hosting img {
+        width: 100%;
+    }
+
+    .popular header {
+        align-items: center;
+    }
+
+    .popular ul {
+        display: flex;
+        margin: 15px 0 0 0;
+        gap: 10px;
+    }
+    
+    .activity ul {
+        margin: 20px 0 80px 0;
+        gap: 30px;
+    }
+
+    .activity img {
+        height: 190px;
+    }
+
+    .activity figcaption {
+        padding: 15px;
+        font-size: initial;
+    }
+
+    .fa-solid {
+        font-weight: 600;
+    }
 }
