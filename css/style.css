@@ -251,7 +251,7 @@ button i {
 }
 
 /******** tablet *********/
-@media only screen and (max-width: 768px ) {
+@media only screen and (max-width: 992px ) {
 
     body {
         margin: auto;
@@ -309,13 +309,21 @@ button i {
     }
 
     .card-popular {
-        margin: 0 0 15px 0;
+        margin: 0;
     }
 
-    .popular img, 
+    
     .popular ul li,
     .hosting img {
         width: 100%;
+    }
+
+    .popular img {
+        width: 40%;
+    }
+
+    .card-popular figcaption {
+        width: 60%;
     }
 
     .popular header {
