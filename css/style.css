@@ -86,7 +86,8 @@ h3 {
 p,
 li,
 a {
-  font-size: 16px;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 footer {
@@ -209,7 +210,7 @@ button i,
 }
 
 .hosting > a {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -217,8 +218,13 @@ button i,
   margin: 0;
   border-radius: 20px;
   padding: 6px;
+  width: 100%;
   background-color: var(--white);
   box-shadow: 0 8px 20px rgb(242, 242, 242, 0.8);
+}
+
+.card-hosting figcaption {
+  padding: 0 10px; 
 }
 
 .popular {
@@ -257,6 +263,7 @@ button i,
 .card-popular figcaption {
   position: relative;
   padding: 0 10px 4px 10px;
+  width: max-content;
 }
 
 .stars-popular {
@@ -360,7 +367,6 @@ button i,
 
   .card-hosting {
     padding: 6px 6px 10px 6px;
-    height: 220px;
   }
 
   .card-popular {
@@ -401,10 +407,6 @@ button i,
   .activity figcaption {
     padding: 15px;
     font-size: initial;
-  }
-
-  .fa-solid {
-    font-weight: 600;
   }
 }
 
@@ -526,6 +528,10 @@ button i,
     border-radius: initial;
   }
 
+  .popular img {
+    height: 150px;
+  }
+
   .hosting {
     padding: 0 20px;
     background-color: initial;
@@ -534,6 +540,7 @@ button i,
   .hosting ul{
     display: grid;
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .card-popular figcaption {
@@ -551,6 +558,7 @@ button i,
 
   .activity ul {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .activity img {
