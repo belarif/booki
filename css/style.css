@@ -290,6 +290,7 @@ nav img {
   margin: 0 0 30px 0;
   border-radius: 20px;
   padding: 6px;
+  height: 100%;
   background-color: var(--white);
   box-shadow: 0px 20px 10px rgb(242, 242, 242, 0.8);
 }
@@ -411,7 +412,8 @@ nav img {
   }
 
   .popular img {
-    width: 40%;
+    width: 45%;
+    height: auto;
   }
 
   .activity img {
@@ -419,7 +421,7 @@ nav img {
   }
 
   .card-popular figcaption {
-    width: 60%;
+    width: 65%;
   }
 
   .popular header {
