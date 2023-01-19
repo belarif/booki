@@ -6,16 +6,18 @@
         <title>Booki</title>
         <meta name="description"  content="Template to start HTML">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;700&display=swap" rel="stylesheet">
+        <link href="https://necolas.github.io/normalize.css" rel="stylesheet">
+        <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
         <!-- en-tete -->
         <nav>
-            <img src="images/logo/Booki@3x.png" alt="logo Booki" title="Booki">
+            <img src="images/logo/Booki.png" alt="logo Booki" title="Booki">
             <ul>
                 <li>
                     <a href="#hosting">Hébergements</a>
@@ -34,30 +36,33 @@
                 <i class="fa-solid fa-location-dot"></i>
                 <input type="search" name="recherche" placeholder="Marseille, France">
                 <input type="button" name="search" value="Rechercher">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
             </form>
         </section>
 
         <!-- filtres -->
         <section class="filters">
-            <ul>
-                <li>
+           <div>
+                <h2>
                     Filtres
-                </li>
-                <li>
-                    <button><i class="fa-solid fa-money-bill-wave"></i> Economique</button>
-                </li>
-                <li>
-                    <button><i class="fa-solid fa-person"></i> Familial</button>
-                </li>
-                <li>
-                    <button><i class="fa-solid fa-heart"></i> Romantique</button>
-                </li>
-                <li>
-                    <button><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
-                </li>
-            </ul>
+                </h2>
+                <ul>
+                    <li>
+                        <button><i class="fa-solid fa-money-bill-wave"></i> Economique</button>
+                    </li>
+                    <li>
+                        <button><i class="fa-solid fa-person"></i> Familial</button>
+                    </li>
+                    <li>
+                        <button><i class="fa-solid fa-heart"></i> Romantique</button>
+                    </li>
+                    <li>
+                        <button><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
+                    </li>
+                </ul>
+           </div> 
             <p>
-                <i class="fa-thin fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
+                <i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
             </p>
         </section>
         
@@ -72,7 +77,7 @@
                             <figure class="card-hosting">
                                 <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la canebière" title="auberge la canebière">
                                 <figcaption>
-                                    <h3>Auberge La Canebière</h3>
+                                    <h3>Auberge la canebière</h3>
                                     <p>Nuit à partir de <b>25€</b></p>
                                     <figure>
                                         <i class="fa-solid fa-star"></i>
@@ -108,7 +113,7 @@
                             <figure class="card-hosting">
                                 <img src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes" title="hotel les mouettes">
                                 <figcaption>
-                                    <h3>Hotel du port</h3>
+                                    <h3>Hotel Les mouettes</h3>
                                     <p>Nuit à partir de <b>76€</b></p>
                                     <figure>
                                         <i class="fa-solid fa-star"></i>
@@ -228,7 +233,7 @@
                                 <img src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel bleu et blanc" title="hotel bleu et blanc">
                                 <figcaption>
                                     <h3>Hotel Bleu et Blanc</h3>
-                                    <p>Nuit à partir de<b>68€</b></p>
+                                    <p>Nuit à partir de <b>68€</b></p>
                                     <figure class="stars-popular">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
@@ -245,7 +250,7 @@
         </main>
 
         <!-- Activités -->
-        <section id="activity" class="activity grid-activity">
+        <section id="activities" class="activity grid-activity">
             <h2>Activités à Marseille</h2>
             <ul>
                 <li>
