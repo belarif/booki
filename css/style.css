@@ -1,9 +1,9 @@
 :root {
-  --blue: #0065FC;
-  --light-blue: #DEEBFF;
-  --grey: #F2F2F2;
+  --blue: #0065fc;
+  --light-blue: #deebff;
+  --grey: #f2f2f2;
   --dark: #000;
-  --white: #FFF;
+  --white: #fff;
 }
 
 * {
@@ -71,16 +71,16 @@ nav a:focus {
 }
 
 p,
-h1, 
-h2, 
-h3, 
-li, 
+h1,
+h2,
+h3,
+li,
 a {
   color: var(--dark);
 }
 
-p, 
-h2, 
+p,
+h2,
 h3 {
   margin: 0.5em 0;
 }
@@ -139,11 +139,11 @@ button {
   width: 100%;
 }
 
-button, 
+button,
 input[type="search"],
 input[type="button"] {
-    font-size: 1em;
-    font-weight: 600;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 button:hover,
@@ -228,7 +228,7 @@ nav img {
   font-size: 1.2rem;
 }
 
-.filters div  {
+.filters div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -266,7 +266,7 @@ nav img {
 }
 
 .card-hosting figcaption {
-  padding: 0 10px; 
+  padding: 0 10px;
 }
 
 .popular {
@@ -307,7 +307,7 @@ nav img {
 }
 
 .fa-star:nth-last-child(1) {
-    color: var(--grey);
+  color: var(--grey);
 }
 
 .fa-chart-line {
@@ -325,11 +325,11 @@ nav img {
 .activity figure {
   margin: 0;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0px 8px 10px rgb(242, 242, 242, 0.8)
+  box-shadow: 0px 8px 10px rgb(242, 242, 242, 0.8);
 }
 
 .activity figcaption {
-  padding: 20px 20px 20px 15px ;
+  padding: 20px 20px 20px 15px;
   font-size: 1.2em;
   font-weight: bold;
   color: var(--dark);
@@ -344,8 +344,7 @@ nav img {
 }
 
 /******** tablet *********/
-@media screen and (max-width: 991px ) {
-
+@media screen and (max-width: 991px) {
   body {
     margin: auto;
     width: 90%;
@@ -393,7 +392,7 @@ nav img {
     margin: 20px 0 80px 0;
   }
 
-  .hosting, 
+  .hosting,
   .popular {
     padding: 30px;
   }
@@ -439,8 +438,7 @@ nav img {
 }
 
 /******** mobile *********/
-@media screen and ( max-width: 767px ) {
-    
+@media screen and (max-width: 767px) {
   body {
     padding: 0;
     width: 100%;
@@ -478,7 +476,7 @@ nav img {
     width: 100%;
     text-align: center;
   }
-  
+
   nav li:hover,
   nav li:focus {
     border-bottom: 3px solid var(--blue);
@@ -494,7 +492,7 @@ nav img {
   input[type="search"] {
     padding: 10px;
     width: 100%;
-    max-width: max-content; 
+    max-width: max-content;
   }
 
   input[type="button"] {
@@ -503,7 +501,7 @@ nav img {
 
   button:hover,
   button:focus {
-    background-color: var(--light-blue); 
+    background-color: var(--light-blue);
   }
 
   button {
@@ -541,7 +539,7 @@ nav img {
     padding: 0 20px;
   }
 
-  .filters div  {
+  .filters div {
     display: initial;
     font-size: 0.8rem;
   }
