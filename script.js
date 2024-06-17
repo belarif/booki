@@ -1,4 +1,4 @@
-"use strict";
+"use_strict";
 
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelector(".modal");
